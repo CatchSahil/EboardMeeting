@@ -1,6 +1,9 @@
 import React from "react";
 
-import {Header} from "./Header";
+import {Header} from "./components/Header";
+import { Home } from "./components/Home";
+import {Login} from "./components/Login"
+import {Signup} from "./components/Signup";
 
 export class Root extends React.Component {
     render() {
