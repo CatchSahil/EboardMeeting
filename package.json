@@ -11,8 +11,9 @@
   "author": "Sahil Kumar Nanda",
   "license": "ISC",
   "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.6.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
