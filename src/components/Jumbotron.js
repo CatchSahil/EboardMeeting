@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
   .jumbo {
+    background-color: white;
     background-size: cover;
     color: #000;
     height: 200px;
