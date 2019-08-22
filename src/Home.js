@@ -1,7 +1,10 @@
 import React from "react";
+import { Footer } from './components/Footer';
+import { Body } from './components/Body';
 
 export const Home = () => (
     <div>
-      <h2>Hello World</h2>
+      <Body />
+      <Footer />
     </div>
   )
