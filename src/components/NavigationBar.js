@@ -1,30 +1,33 @@
-import React from 'react';
+
+import React, { Component } from 'react'
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
 
-const Styles = styled.div`
-.navbar-default {
-    background-color: white;
-    box-shadow: 4px 4px 22px -10px rgba(48,46,48,1);
-}
-.loginnav {
-    left: 1000px;
-    color: blue;
-}
-`;
 
-export const NavigationBar = () => (
-<Styles>
-    <nav className="navbar navbar-default">
-        <div className="container">
-            <div class="navbar-header">
-                <ul className="nav navbar-nav">
-                    <li><Link to="/home">Home</Link></li>
-                    <li class="loginnav"><Link to="/login">Login</Link></li>
-                    <li class="loginnav"><Link to="/signup">Signup</Link></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</Styles>
-)
+export default class NavigationBar extends Component {
+  render() {
+    return (
+      <Navbar default collapseOnSelect>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <Link to="/">CodeLife</Link>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <Nav pullRight>
+            <NavItem eventKey={1} componentClass={Link} href="/" to="/">
+              Home
+            </NavItem>
+            <NavItem eventKey={2} componentClass={Link} href="/login" to="/about">
+              About
+            </NavItem>
+            <NavItem eventKey={3} componentClass={Link} href="/signup" to="/news">
+              News
+            </NavItem>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    )
+  }
+}

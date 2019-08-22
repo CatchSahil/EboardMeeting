@@ -1,30 +1,33 @@
 import React from 'react';
 import styled from 'styled-components';
 import SocialIcons from "./SocialIcons";
+import { Container } from 'react-bootstrap';
 
 const Styles = styled.div` {
     .footer {
-        flex: 0 0 auto;
-        color: #fff4e3;
-        background-color: #ffa45c;
+        height: 100px;
+        margin-top:auto;
+        color: #000000;
+        background-color: #cdcdcd;
       }
+    .copyright {
+      padding: 20px;
+    }
 `;
 
 export const Footer = () => (
     <Styles>
         <footer className="footer">
-      <div className="container">
+      <Container>
         <div className="row justify-content-between text-center">
-          <div className="col-md-4 text-md-left">
-            <p>
+            <p className="copyright">
               Copyright &copy; 2019. Invincix Private Limited. All rights reserved!
             </p>
-          </div>
+        </div>
           <div className="col-md-4 text-md-right">
             <SocialIcons />
           </div>
-        </div>
-      </div>
+        </Container>
     </footer>
     </Styles>
 )
