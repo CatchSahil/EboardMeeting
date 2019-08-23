@@ -7,8 +7,8 @@ const Styles = styled.div` {
     .footer {
         height: 100px;
         margin-top:auto;
-        color: #000000;
-        background-color: #cdcdcd;
+        color: #ffffff;
+        background-color: #050038;
       }
     .copyright {
       padding: 20px;
